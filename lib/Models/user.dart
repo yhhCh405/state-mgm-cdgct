@@ -1,11 +1,13 @@
+import 'package:intl_phone_number_input/intl_phone_number_input.dart';
+
 class User {
   String? firstName;
   String? lastName;
   String? email;
-  DateTime? dob;
+  String? dob;
   String? nationality;
   String? country;
-  String? phNo;
+  PhoneNumber? phNo;
 
   bool get doesRequiresSatisfied =>
       firstName != null &&
